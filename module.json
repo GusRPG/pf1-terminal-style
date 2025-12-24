@@ -1,0 +1,25 @@
+{
+  "id": "pf1-terminal-style",
+  "title": "Pathfinder 1e Terminal Style",
+  "description": "Terminal style for Pathfinder 1e Foundry VTT system.",
+  "version": "1.0.1",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "13"
+  },
+  "authors": [
+    {
+      "name": "GusRPG"
+    }
+  ],
+  "esmodules": [
+    "scripts/terminal-effects.js"
+  ],
+  "styles": [
+    "styles/terminal-style.css"
+  ],
+  "url": "https://github.com/GusRPG/pf1-terminal-style",
+  "manifest": "https://raw.githubusercontent.com/GusRPG/pf1-terminal-style/main/module.json",
+  "download": "https://github.com/GusRPG/pf1-terminal-style/archive/refs/heads/main.zip"
+  }
