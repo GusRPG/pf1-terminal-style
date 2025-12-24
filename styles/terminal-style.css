@@ -33,7 +33,7 @@ body {
   --terminal-secondary: #006600;
   --terminal-dim: #0b530b;
   --terminal-text: #008800;
-  --terminal-warning: #b2d281;
+  --terminal-warning: #FFA901;
   --terminal-error: #cc0000;
   --terminal-border: #008800;
   --terminal-font: 'Courier Prime', 'Share Tech Mono', monospace;
@@ -4336,3 +4336,309 @@ li.attribute.health .hp-current-input {
   vertical-align: middle !important;
 }
 
+/* =================================================
+   FIX ATTACKS: FUENTE + TAMAÑO 100% RELATIVO
+   ================================================= */
+
+.attacks-body *,
+.attacks-body .item-detail *,
+.attacks-body .item-name * {
+  font-family: var(--terminal-font) !important;
+  font-size: var(--terminal-font-size) !important;
+}
+
+.attacks-body h3.item-name,
+.attacks-body .item-list-header h3 {
+  font-size: calc(var(--terminal-font-size) + 2px) !important;
+}
+
+.attacks-body .item-name h4.item-name-text,
+.attacks-body .item-name .item-name-text {
+  font-size: var(--terminal-font-size) !important;
+}
+
+.attacks-body .item-detail label,
+.attacks-body .item-detail.item-attacks label,
+.attacks-body .item-detail.item-damage label,
+.attacks-body .item-detail.item-range label,
+.attacks-body .item-detail.item-uses .value,
+.attacks-body .item-detail.item-uses .max {
+  font-size: var(--terminal-font-size) !important;
+}
+
+.attacks-body .koboldworks.item-hints .item-hint,
+.attacks-body .koboldworks.item-hints .item-hint span {
+  font-size: calc(var(--terminal-font-size) - 4px) !important;
+}
+
+/* === SPELL LIST HEADERS - COLUMNAS 4, 5, 6 === */
+
+/* Item-detail dentro de spellbook-header */
+.spellbook-header .item-detail,
+li.spellbook-header .item-detail,
+.item-list-header .item-detail {
+  font-family: var(--terminal-font) !important;
+  font-size: var(--terminal-font-size) !important;
+}
+
+/* Iconos específicos en las columnas - MANTENER Font Awesome */
+.spellbook-header .item-detail i,
+.item-list-header .item-detail i {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro", "Font Awesome 5 Free", "FontAwesome" !important;
+  color: var(--terminal-primary) !important;
+}
+
+/* Clases específicas de las columnas */
+.item-detail.item-actions,
+.item-detail.spell-activation,
+.item-detail.spell-components,
+.item-detail.spell-school,
+.item-detail.spell-uses {
+  font-family: var(--terminal-font) !important;
+  font-size: var(--terminal-font-size) !important;
+}
+
+/* Spans dentro de item-detail */
+.item-detail span,
+.spell-activation span,
+.spell-components span,
+.spell-school span {
+  font-family: var(--terminal-font) !important;
+  font-size: var(--terminal-font-size) !important;
+  color: var(--terminal-text) !important;
+}
+
+/* Custom icons (icon-pf) */
+.icon-pf,
+i.icon-pf,
+[class*="icon-"]:not([class*="fa-"]) {
+  font-family: "Pathfinder-Icons", var(--terminal-font) !important;
+  color: var(--terminal-primary) !important;
+}
+
+/* Item name column */
+.item-name h3 {
+  font-family: var(--terminal-font) !important;
+  font-size: var(--terminal-font-size) !important;
+  color: var(--terminal-primary) !important;
+}
+
+/* Spell input readonly */
+.spell-input-readonly,
+span.spell-input-readonly {
+  font-family: var(--terminal-font) !important;
+  font-size: var(--terminal-font-size) !important;
+  color: var(--terminal-primary) !important;
+}
+
+/* =================================================
+   FIX ESPECÍFICO PARA LABELS EN ATRIBUTOS / RESISTENCIAS
+   ================================================= */
+
+/* Fuerza fuente y tamaño en TODOS los labels problemáticos */
+.attributes.misc-base .attribute-name label,
+.attributes.misc-base .attribute-footer label,
+.attributes.misc-base .attribute-name h4.label,
+.attributes.misc-base label[for*="system.traits.dr"],
+.attributes.misc-base label[for*="system.traits.eres"],
+.attributes.misc-base label[for*="system.traits.di"],
+.attributes.misc-base label[for*="system.traits.dv"] {
+  font-family: var(--terminal-font) !important;
+  font-size: var(--terminal-font-size) !important;
+  color: var(--terminal-primary) !important;
+  text-shadow: var(--terminal-text-shadow) !important;
+  font-weight: bold !important;
+}
+
+/* Asegura que los spans dentro de .resistance-list también usen la fuente */
+.attributes.misc-base .resistance-list li.tag {
+  font-family: var(--terminal-font) !important;
+  font-size: var(--terminal-font-size) !important;
+  color: var(--terminal-text) !important;
+}
+
+/* Para que no se escape nada en la sección completa de atributos */
+.attributes.misc-base *,
+.attributes.misc-base .attribute-name *,
+.attributes.misc-base .attribute-value *,
+.attributes.misc-base .attribute-footer * {
+  font-family: var(--terminal-font) !important;
+  font-size: var(--terminal-font-size) !important;
+}
+
+/* =================================================
+   FIX PARA <PRE> EN CHAT / FICHAS DE CRIATURAS
+   ================================================= */
+
+pre {
+  font-family: var(--terminal-font) !important;
+  font-size: var(--terminal-font-size) !important;
+  color: var(--terminal-text) !important;
+  background-color: var(--terminal-bg) !important;
+  border: 1px solid var(--terminal-border) !important;
+  padding: 12px !important;
+  white-space: pre-wrap !important;
+  line-height: 1.4 !important;
+  text-shadow: var(--terminal-text-shadow) !important;
+}
+
+/* Si el <pre> está dentro del chat-log o message-content */
+#chat-log pre,
+.chat-message pre,
+.message-content pre {
+  font-family: var(--terminal-font) !important;
+  font-size: var(--terminal-font-size) !important;
+  color: var(--terminal-primary) !important; /* o --terminal-text si prefieres más tenue */
+  background-color: var(--terminal-bg) !important;
+  border: 2px solid var(--terminal-border) !important;
+  box-shadow: var(--terminal-glow) !important;
+  padding: 16px !important;
+  margin: 8px 0 !important;
+}
+
+/* Fuerza en spans o líneas dentro del pre (por si hay inline) */
+pre * {
+  font-family: var(--terminal-font) !important;
+  font-size: var(--terminal-font-size) !important;
+}
+
+/* =================================================
+   FIX BOTÓN LEVEL UP - TEXTO MÁS PEQUEÑO Y CENTRADO
+   ================================================= */
+
+button.level-up {
+  font-family: var(--terminal-font) !important;
+  font-size: calc(var(--terminal-font-size) - 4px) !important; /* 4px más pequeño que el base */
+  color: var(--terminal-primary) !important;
+  background-color: var(--terminal-bg) !important;
+  border: 2px solid var(--terminal-border) !important;
+  box-shadow: var(--terminal-glow) !important;
+  padding: 6px 14px !important; /* Reduce padding para que el botón no quede muy ancho */
+  margin: 0 !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: auto !important;
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+button.level-up:hover {
+  background-color: var(--terminal-primary) !important;
+  color: var(--terminal-bg) !important;
+  box-shadow: 0 0 10px var(--terminal-primary) !important;
+}
+
+/* Si hay span o i dentro del botón */
+button.level-up span,
+button.level-up i {
+  font-size: inherit !important; /* Hereda el tamaño reducido */
+  color: inherit !important;
+}
+
+/* === SKILLS CHECKBOXES - TRES ESTADOS DISTINTOS === */
+
+/* Base para todos los checkboxes en skills */
+.skills-list input[type="checkbox"] {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  width: 16px !important;
+  height: 16px !important;
+  background-color: var(--terminal-bg) !important;
+  border: 2px solid var(--terminal-dim) !important;
+  cursor: pointer !important;
+  position: relative !important;
+  transition: all 0.3s ease !important;
+  margin: 0 4px !important;
+}
+
+/* ESTADO 1: Sin marcar (NO checked) - GRIS SIN GLOW */
+.skills-list input[type="checkbox"]:not(:checked) {
+  border-color: var(--terminal-dim) !important;
+  box-shadow: none !important;
+}
+
+.skills-list label:has(input[type="checkbox"]:not(:checked)) abbr {
+  color: var(--terminal-dim) !important;
+  text-shadow: none !important;
+}
+
+/* ESTADO 2: Marcado y HABILITADO (checked pero NO disabled) - VERDE CON GLOW */
+.skills-list input[type="checkbox"]:checked:not(:disabled) {
+  border-color: var(--terminal-primary) !important;
+  box-shadow: 0 0 4px var(--terminal-primary), 
+              0 0 8px var(--terminal-primary) !important;
+  background-color: var(--terminal-bg) !important;
+}
+
+.skills-list input[type="checkbox"]:checked:not(:disabled)::after {
+  content: "✓" !important;
+  position: absolute !important;
+  color: var(--terminal-primary) !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  text-shadow: 0 0 3px var(--terminal-primary) !important;
+}
+
+.skills-list label:has(input[type="checkbox"]:checked:not(:disabled)) abbr {
+  color: var(--terminal-primary) !important;
+  text-shadow: 0 0 2px var(--terminal-primary) !important;
+  font-weight: bold !important;
+}
+
+/* ESTADO 3: Marcado y DESHABILITADO (checked Y disabled) - AMARILLO CON GLOW */
+.skills-list input[type="checkbox"]:checked:disabled {
+  border-color: var(--terminal-warning) !important;
+  box-shadow: 0 0 4px var(--terminal-warning), 
+              0 0 8px var(--terminal-warning) !important;
+  background-color: var(--terminal-bg) !important;
+  cursor: not-allowed !important;
+  opacity: 1 !important;
+}
+
+.skills-list input[type="checkbox"]:checked:disabled::after {
+  content: "✓" !important;
+  position: absolute !important;
+  color: var(--terminal-warning) !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  text-shadow: 0 0 3px var(--terminal-warning) !important;
+}
+
+.skills-list label:has(input[type="checkbox"]:checked:disabled) abbr {
+  color: var(--terminal-warning) !important;
+  text-shadow: 0 0 2px var(--terminal-warning) !important;
+  font-weight: bold !important;
+}
+
+/* Hover solo en habilitados */
+.skills-list input[type="checkbox"]:not(:disabled):hover {
+  border-color: var(--terminal-primary) !important;
+  box-shadow: 0 0 3px var(--terminal-primary) !important;
+}
+
+/* Labels */
+.skills-list label.checkbox {
+  background-color: transparent !important;
+  border: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  cursor: pointer !important;
+}
+
+.skills-list label.checkbox abbr {
+  font-family: var(--terminal-font) !important;
+  font-size: calc(var(--terminal-font-size) - 3px) !important;
+  transition: all 0.3s ease !important;
+}
