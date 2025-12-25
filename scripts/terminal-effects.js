@@ -1,10 +1,10 @@
 /**
- * Cyberpunk Terminal Style - Effects and advanced configuration
+ * Pathfinder 1e Terminal Style - Effects and advanced configuration
  */
 
 class CyberpunkTerminalEffects {
-    static MODULE_ID = 'cyberpunk-starfinder-terminal-style';
-    static MODULE_TITLE = 'Cyberpunk Starfinder Terminal Style';
+    static MODULE_ID = 'pf1-terminal-style';
+    static MODULE_TITLE = 'Pathfinder 1e Terminal Style';
     static isApplyingPreset = false; // Flag para evitar updates durante preset application
 
     static init() {
