@@ -18,7 +18,7 @@
 
 ## 🖥️ SYSTEM INTERFACE PREVIEW
 
-<img width="2560" height="1440" alt="32" src="https://github.com/user-attachments/assets/6b3a2f36-8079-4aec-b4df-885afd19cb74" />
+<img width="1779" height="1440" alt="a2" src="https://github.com/user-attachments/assets/218b9760-f9f5-4463-abe9-d1f0c9f5496d" />
 
 ---
 
@@ -26,7 +26,7 @@
 ### Key Features & Customizations  
 *from the Foundry VTT Core Settings Panel – look for the module name :*
 
-<img width="2560" height="1440" alt="31" src="https://github.com/user-attachments/assets/a2f722ce-7381-49f0-98bf-b1eb00501331" />
+<img width="1957" height="1440" alt="a4" src="https://github.com/user-attachments/assets/d3b7500d-e361-4599-84dd-564b81a9543e" />
 
 ---
 
@@ -47,22 +47,22 @@ Choose from a wide palette of classic terminal colors, including:
 
 💡 **Glow intensity is fully adjustable** for buttons, form backgrounds, and other UI elements.
 
+
+<img width="1766" height="1440" alt="a3" src="https://github.com/user-attachments/assets/3f737ae0-abb1-4f8e-bef9-c02496cb2982" />
+
+<img width="1771" height="1440" alt="a1" src="https://github.com/user-attachments/assets/33e2ade2-4d4d-47af-a0a0-05aec4a4f3b8" />
+
 ---
 
 ## 👁️ VOID BLACK MODE
 ### Rest your optics. Enter the void.
 
-You can relax your eyes also with the **Void Black theme**:
-
-<img width="2560" height="1440" alt="42" src="https://github.com/user-attachments/assets/85c2e68a-5b54-4cfa-93e2-2a6775a25fef" />
-
+You can relax your eyes also with the **Void Black theme*
 ---
 
 ## 🔠 TERMINAL FONTS & TYPOGRAPHY
 
-Choose from a variety of retro and modern monospace fonts for that authentic terminal feel:
-
-<img width="1573" height="1245" alt="15" src="https://github.com/user-attachments/assets/48e8c465-961a-4cf2-9c15-80419b3da52d" />
+Choose from a variety of retro and modern monospace fonts for that authentic terminal feel
 
 **Available fonts:**
 
