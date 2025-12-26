@@ -127,7 +127,7 @@ class CyberpunkTerminalEffects {
                 max: 36,
                 step: 1
             },
-            default: 19,
+            default: 17,
             onChange: this.updateFontSize.bind(this)
         });
 
@@ -848,7 +848,7 @@ class CyberpunkTerminalEffects {
                     dimTextColor: '#66b3b3',
                     backgroundColor: '#001414',
                     mainTextColor: '#99ffff',
-                    fontSize: 19,
+                    fontSize: 17,
                     fontFamily: 'mono',
                     glowIntensity: 10,
                     animationSpeed: 150,
