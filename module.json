@@ -2,7 +2,7 @@
   "id": "pf1-terminal-style",
   "title": "Pathfinder 1e Terminal Style",
   "description": "Terminal style for Pathfinder 1e Foundry VTT system.",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "compatibility": {
     "minimum": "13",
     "verified": "13",

@@ -1278,40 +1278,6 @@ nav.tabs .item,
   display: none;
 }
 
-/* Chip image using pseudo-element */
-.field.skill label.chip-toggle .chip-icon::before {
-  content: "";
-  display: block;
-  width: 1.5em;
-  height: 1.5em;
-  background-image: url(../img/chip.png);
-  background-size: cover;
-  background-position: center;
-  transition: opacity 0.2s ease-in-out;
-  opacity: 1;
-  /* activated state */
-}
-
-/* Activated chip */
-.field.skill input[type=checkbox]:checked+.chip-icon::before {
-  opacity: 1;
-  /* fully visible */
-}
-
-/* SEARCH ICON */
-.skill-top-matter div.search-icon {
-  background-color: var(--terminal-bg) !important;
-  background-image: url("../img/search.png") !important;
-  background-size: cover !important;
-  background-position: center !important;
-  height: 1.5em;
-  width: 1.5em;
-  display: inline-block;
-  z-index: 11;
-  opacity: 1;
-  transition: opacity 0.2s;
-}
-
 *:not(.message-timestamp),
 *:not(.message-timestamp)::before,
 *:not(.message-timestamp)::after {
