@@ -4794,3 +4794,81 @@ button.dice-tray__disadvantage:hover,
   visibility: visible !important;
   display: inline-block !important;
 }
+
+.ship-input-pair input,
+.ship-input-pair span,
+.ship-input-pair div {
+  background-color: var(--terminal-bg) !important;
+  background: var(--terminal-bg) !important;
+  color: var(--terminal-primary) !important;
+  border-color: var(--terminal-secondary) !important;
+}
+
+input[type="number"] {
+  background-color: var(--terminal-bg) !important;
+  background: var(--terminal-bg) !important;
+  color: var(--terminal-primary) !important;
+  border-color: var(--terminal-secondary) !important;
+  -webkit-appearance: none !important;
+}
+
+/* Hull stat, crew, roles, components - fondo negro */
+.hull-stat,
+.hull-stat *,
+.crew-experience-row,
+.crew-experience-row *,
+.crew-card-title,
+.crew-field,
+.crew-field *,
+.crew-label,
+.crew-static,
+.voidship-table-head,
+.voidship-table-head *,
+.voidship-table-cell,
+.ship-role-block,
+.ship-role-block *,
+.ship-role-description,
+.ship-role-description *,
+.ship-role-label,
+.ship-role-text,
+.ship-role-text *,
+.ship-component-block,
+.ship-component-block *,
+.ship-component-label,
+.ship-component-text,
+.ship-components-space,
+.ship-components-space *,
+.ship-components-label,
+.ship-components-value,
+.modifiers-card,
+.modifiers-card *,
+.modifiers-title,
+.modifiers-options,
+.modifiers-field,
+.modifiers-field *,
+.modifiers-label,
+.modifiers-button,
+.modifiers-buttons,
+.modifiers-checkbox,
+.modifiers-checkbox * {
+  background-color: var(--terminal-bg) !important;
+  background: var(--terminal-bg) !important;
+  background-image: none !important;
+  color: var(--terminal-primary) !important;
+}
+
+/* Select y options dentro de modifiers */
+.modifiers-card select,
+.modifiers-card option,
+.modifiers-label select,
+.modifiers-label option {
+  background-color: var(--terminal-bg) !important;
+  background: var(--terminal-bg) !important;
+  color: var(--terminal-primary) !important;
+  border-color: var(--terminal-secondary) !important;
+}
+
+/* Checkboxes */
+.modifiers-checkbox input[type="checkbox"] {
+  accent-color: var(--terminal-primary) !important;
+}
